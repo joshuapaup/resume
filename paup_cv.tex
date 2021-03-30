@@ -1,0 +1,222 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\usepackage{wasysym}
+\usepackage[misc]{ifsym}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Joshua Paup} \\ \vspace{1pt}
+    \phone \space \small 720-618-7073 $|$ \Letter \space {joshua.paup@colorado.edu} $|$ \faLinkedin \space
+    \href{https://www.linkedin.com/in/joshuapaup/}{joshuapaup} $|$ \faGithub \space
+     \href{https://github.com/joshuapaup}{joshuapaup}
+     $|$ \faBookmarkO \space
+     \href{https://joshuapaup.github.io/joshua-paup/}{joshuapaup.com}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Colorado - Boulder}{Boulder, CO}
+      {Bachelor of Arts in Computer Science and Mathematics}{August 2017 -- May 2021}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {The Internet Rules Lab}{Boulder, CO}
+      {Undergraduate Research Assistant} {March 2021 -- Present}
+      \resumeItemListStart
+
+        \resumeItem{Currently working as an undergraduate research assistant under the supervision of Dr. Casey Fiesler working on research related to AI ethics education.}
+
+        \resumeItem{\textit{AI Ethics Education} - Researching strategies for implementing AI ethics into introductory computing curriculum, analyzing existing ethical topics in introductory computing syllabi, and designing assignments to consider and apply ethical topics/thinking.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Laboratory for Atmospheric and Space Physics}{Boulder, CO}
+      {Undergraduate Software Engineer} {April 2020 -- Present}
+      \resumeItemListStart
+
+        \resumeItem{Currently assigned to the web development team as an undergraduate software engineer (front-end development emphasis) with assignments to several 'space weather' portals that host a collection of space weather and solar irradiance datasets for research scientists.}
+
+        \resumeItem{Use HTML, CSS/Sass, JavaScript, and TypeScript on the Angular framework to develop web pages and build data visualization tools.}
+
+        \resumeItem{Experience working with several REST APIs to extract a variety of planetary atmospheric, space plasma, and space weather datasets.}
+
+        \resumeItem{Participate in Agile and Scrum work methodology with daily stand-ups, bi-weekly sprints, and tools like Jira and Confluence to track work progress.}
+
+      \resumeItemListEnd
+
+     \resumeSubheading
+      {University of Colorado - Boulder}{Boulder, CO}
+      {Professional Research Associate}{April 2020 -- August 2020}
+      \resumeItemListStart
+
+        \resumeItem{Worked with a research team that developed a set of visualization search tools to identify relationships between North Atlantic archaeology, climate science, paleontology, and literature datasets.}
+
+        % \resumeItem{Conducted research on how to visually represent complexity between unbalanced datasets.}
+
+        \resumeItem{Used Tableau to create initial visualization prototypes between unbalanced datasets.}
+
+        \resumeItem{Used JavaScript (D3.js) to create network visualizations and interact with a REST API to extract datasets.}
+
+        \resumeItem{Wrote queries in MySQL to produce reports related to shared similarities between datasets.}
+
+        \resumeItem{Produced Jupyter Notebooks (Python) containing final visualization search tool prototypes to assist research scientists in discovering research overlap with other scientists.}
+
+    %   \resumeItem{\textbf{Tools and Methods:} Python, Jupyter Notebooks, Tableau, GitHub}
+      \resumeItemListEnd
+
+    %   \resumeSubheading
+    %   {University of Colorado - Boulder}{Boulder, CO}
+    %   {Computer Science Course Assistant}{January 2019 -- January 2020}
+    %   \resumeItemListStart
+
+    %     \resumeItem{Assigned to the introductory computer science course \textit{CSCI 1300 Computer Science 1: Starting Computing} for three semesters (Spring 2019, Summer 2019, and Fall 2019).}
+
+    %     % \resumeItem{Conducted research on how to visually represent complexity between unbalanced datasets.}
+
+    %     \resumeItem{Assisted teaching assistants with weekly recitation instruction, held weekly office hours to answer student questions on projects or homework, and assisted the course professors with the design and development of the course final project.}
+
+    %     \resumeItem{\textbf{Tools and Methods:} C++, Virtual Machines, Text Editors, Algorithmic Design, Teaching}
+    %   \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%
+%----PROGRAMMING SKILLS-----------
+\section{Skills and Relevant Coursework}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python (Intermediate), C/C++ (Intermediate), JavaScript (Intermediate), TypeScript (Beginner)} \\
+     \textbf{Database}{: MySQL, PostgreSQL, MongoDB, Cassandra}
+     \\
+     \textbf{Workflow}{: BitBucket, GitHub, Jira, Confluence}
+     \\
+     \textbf{Tools and Technologies}{: HTML, CSS/SCSS/Sass, D3.js, Node.js, Angular 8+, Figma Prototyping, Tableau, Jupyter Notebook, Linux, Windows, MacOS, Microsoft Office Suite, \LaTeX}
+     \\
+     \textbf{Coursework}{: Data Structures, Algorithms, Database Systems, Information Visualization, Data Mining, Software Methods and Tools, Human-Computer Interactions, Artificial Intelligence, Natural Language Processing, Coding \& Cryptography, Probability Theory, Mathematical Statistics, Numerical Analysis, Operations Research}
+     \\
+     \textbf{Work Areas}{: Software Engineering, Front-End Development, UI/UX Research \& Design, Data Visualizations, AI Ethics, AI Ethics Education, Data Analytics, Data Science}
+    }}
+ \end{itemize}
+%----PROGRAMMING SKILLS-----------
+\section{University Involvement}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{CU Bee Club \textit{(Co-Founder, Vice President for Administration)}}{: Co-founded a conservation group with a focus on the education and awareness of local pollinators and bees at the University of Colorado - Boulder.} \\
+     \textbf{CU Math Club \textit{(President)}}{: Served as president of CU Math Club.  Worked to host biweekly social hours for all mathematics affiliates and assisted club advisors with scheduling/planning guest lectures.}
+    }}
+ \end{itemize}
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading{\textbf{\href{https://github.com/joshuapaup/a-boring-analysis}{A Boring Analysis}} $|$ \emph{HTML, SCSS, JavaScript, Python, Tableau}}{November 2020 -- Present}
+%       \resumeItemListStart
+%         %  \resumeItem{Developing using HTML, SCSS, JavaScript, and TypeScript on the Angular 9 framework.}
+%          \resumeItem{This project is my attempt at a data journalism website that ties in my interests between front-end development, information visualizations, and data analytics into one single project.}
+%         %  \resumeItem{The final website will host a variety of interactive visualizations ranging between D3.js, Tableau, and Jupyter Notebooks, along with any corresponding analytics.}
+%         %  \resumeItem{\textit{Expected date of completion - November 2020}}
+%       \resumeItemListEnd
+
+%       \resumeProjectHeading{\textbf{\href{https://github.com/joshuapaup/joshua-paup}{Personal Website}} $|$ \emph{HTML, SCSS, JavaScript, TypeScript, Angular 9}}{November 2020 -- Present}
+%       \resumeItemListStart
+%         %  \resumeItem{Developing using HTML, SCSS, JavaScript, and TypeScript on the Angular 9 framework.}
+%          \resumeItem{This project is an update to my personal website that serves to be an interactive version of this resume that showcases my work and personal interests.}
+%         %  \resumeItem{\textit{Expected date of completion - November 2020}}
+%     \resumeSubHeadingListEnd
+\end{document}
